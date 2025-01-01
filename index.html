@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- إضافة الشعار في رأس الصفحة -->
+    <header>
+        <img src="logo.png" alt="Logo" class="logo">
+    </header>
+
+    <div class="container">
+        <div class="input-section">
+            <textarea class="input-area" placeholder="Paste data here / الصق البيانات هنا"></textarea>
+        </div>
+        <div class="buttons">
+            <button class="btn print-btn" onclick="window.print()">Print / طباعة</button>
+            <button class="btn clear-btn" onclick="clearForm()">Clear / مسح</button>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Owner Details:</div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label>First name</label>
+                    <input type="text" class="form-control" id="firstName">
+                </div>
+                <div class="form-group">
+                    <label>Last Name</label>
+                    <input type="text" class="form-control" id="lastName">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Owner Home Address</label>
+                    <input type="text" class="form-control" id="homeAddress">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Owner Phone Number</label>
+                    <input type="text" class="form-control" id="ownerPhone">
+                </div>
+                <div class="form-group">
+                    <label>Owner Email</label>
+                    <input type="email" class="form-control" id="ownerEmail">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Social Security</label>
+                    <input type="text" class="form-control" id="ssn">
+                </div>
+                <div class="form-group">
+                    <label>Confirm Social Security</label>
+                    <input type="text" class="form-control" id="confirmSSN">
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Location Information:</div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Location Name (DBA)</label>
+                    <input type="text" class="form-control" id="locationName">
+                </div>
+                <div class="form-group">
+                    <label>Legal Name</label>
+                    <input type="text" class="form-control" id="legalName">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Location Address</label>
+                    <input type="text" class="form-control" id="locationAddress">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Location Phone Number</label>
+                    <input type="text" class="form-control" id="locationPhone">
+                </div>
+                <div class="form-group">
+                    <label>Location Email</label>
+                    <input type="email" class="form-control" id="locationEmail">
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Required Files:</div>
+            <div class="required-files">
+                <label><input type="checkbox" id="taxId"> Tax Id</label>
+                <label><input type="checkbox" id="driverLicense"> Driver License / ID</label>
+                <label><input type="checkbox" id="voidedCheck"> Voided Check</label>
+                <label><input type="checkbox" id="socialSecurity"> Social Security</label>
+                <label><input type="checkbox" id="fnsEbt"> FNS/EBT</label>
+                <label><input type="checkbox" id="other"> Other</label>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
